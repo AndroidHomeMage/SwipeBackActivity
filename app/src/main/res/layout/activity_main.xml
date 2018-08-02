@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/container"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="drag.example.com.myswipebacklayout.MainActivity">
     <Button
@@ -12,6 +13,10 @@
         android:text="在一个自定义控件上花两个图片，用继承viewgroup的方式实现，保证你没见过"
         android:gravity="center"
         android:layout_height="wrap_content" />
-
+    <Button
+        android:id="@+id/btn_third"
+        android:layout_width="match_parent"
+        android:text="实现左右滑动关闭activity"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

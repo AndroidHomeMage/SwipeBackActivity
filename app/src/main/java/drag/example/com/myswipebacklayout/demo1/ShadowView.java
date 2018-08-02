@@ -1,4 +1,4 @@
-package drag.example.com.myswipebacklayout;
+package drag.example.com.myswipebacklayout.demo1;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,14 +15,16 @@ import android.widget.RelativeLayout;
 
 import java.util.Random;
 
+import drag.example.com.myswipebacklayout.R;
+
 /**
  * Created by mayong on 2018/8/1.
+ *    效果图   screen/3E94E3C5930AD90EA372B5EF6EADBA44.gif
  */
 
 public class ShadowView extends RelativeLayout {
 
     private Drawable drawable;
-    private Drawable rightDrawable;
     private ColorDrawable lineDrawable;
     Rect rect = new Rect();
     private int borderwidth = 3;
@@ -87,7 +89,7 @@ public class ShadowView extends RelativeLayout {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                performClick();
+                performClick();//如果你想给控件设置点击事件要加上这个，不然控件不能响应点击事件
                 break;
             case MotionEvent.ACTION_UP:
                 lineDrawable.setColor(Color.rgb(random.nextInt() + 50, random.nextInt() + 50, random.nextInt() + 50));
@@ -115,9 +117,9 @@ public class ShadowView extends RelativeLayout {
 
     private void drawBorder(Canvas canvas, View child) {
         Rect r = rect;
-        child.getHitRect(r);
-        lineDrawable.setBounds(0, 0, borderwidth, r.bottom);
-        lineDrawable.draw(canvas);
+        child.getHitRect(r);//获取子控件的绘制区域
+        lineDrawable.setBounds(0, 0, borderwidth, r.bottom);//设置lineDrawable的绘制区域
+        lineDrawable.draw(canvas);//将lineDrawable绘制到画布上
         lineDrawable.setBounds(0, 0, r.right, borderwidth);
         lineDrawable.draw(canvas);
         lineDrawable.setBounds(r.right - borderwidth, 0, r.right, r.bottom);

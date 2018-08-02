@@ -6,19 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="drag.example.com.myswipebacklayout.SecondActivity">
+    tools:context="drag.example.com.myswipebacklayout.demo1.SecondActivity">
     <TextView
         android:layout_width="wrap_content"
         android:text="墨盒"
         android:textSize="20sp"
         android:textColor="#f00"
         android:layout_height="wrap_content" />
-    <drag.example.com.myswipebacklayout.ShadowView
+    <drag.example.com.myswipebacklayout.demo1.ShadowView
+        android:id="@+id/shadow"
         android:layout_width="300dp"
         android:layout_marginTop="50dp"
         android:layout_height="300dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </drag.example.com.myswipebacklayout.ShadowView>
+    </drag.example.com.myswipebacklayout.demo1.ShadowView>
 </LinearLayout>
