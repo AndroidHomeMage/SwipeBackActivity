@@ -10,4 +10,4 @@
 
 ### demo2  高仿微信滑动退出activity
 
-![高仿微信滑动退出activity](https://raw.githubusercontent.com/AndroidHomeMage/SwipeBackActivity/master/screen/%E5%A8%9C%E7%BE%8E.jpg)
+![高仿微信滑动退出activity](https://raw.githubusercontent.com/AndroidHomeMage/SwipeBackActivity/master/screen/%E5%B0%8F%E8%B4%BC%E7%8C%AB.gif)
